@@ -1,0 +1,14 @@
+interpretar operaciones matematicas de sumas y restar numeros enteros
+
+input 1 + 3 + 4 - 4
+output 4
+
+************
+
+Context ---> input String  ***
+             output Int
+             signo Int
+
+AbstractExpression ---> OperationM
+TerminalExpresion  ---> Numeros / Suma / Resta
+NonTerminalExpresion ----> Interpreter
