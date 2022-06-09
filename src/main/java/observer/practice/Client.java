@@ -7,7 +7,7 @@ public class Client {
         canalTelefonia.attach(new UserTelefonia("Noticia",new Persona("2222222","Steve")));
         canalTelefonia.attach(new UserTelefonia("todos",new Persona("3333333","Clint")));
 
-        canalTelefonia.noti(new Notificaciones("666",
+        canalTelefonia.noti(new Notificaciones("El precio es de 666$",
                 "Precios suculentos y 2x1",
                 "Autos idoooos",
                 "Hoy hay futbol (clima calido)",

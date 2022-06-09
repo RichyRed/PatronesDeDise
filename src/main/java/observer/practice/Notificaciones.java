@@ -5,22 +5,22 @@ public class Notificaciones {
     private String promociones;
     private String premios;
     private String noticia;
-    private String catalizador;
+    private String elementos;
 
-    public Notificaciones(String preciosLlamada, String promociones, String premios, String noticia, String catalizador) {
+    public Notificaciones(String preciosLlamada, String promociones, String premios, String noticia, String elementos) {
         this.preciosLlamada = preciosLlamada;
         this.promociones = promociones;
         this.premios = premios;
         this.noticia = noticia;
-        this.catalizador = catalizador;
+        this.elementos = elementos;
     }
 
-    public String getCatalizador() {
-        return catalizador;
+    public String getElementos() {
+        return elementos;
     }
 
-    public void setCatalizador(String catalizador) {
-        this.catalizador = catalizador;
+    public void setElementos(String elementos) {
+        this.elementos = elementos;
     }
 
     public String getPreciosLlamada() {

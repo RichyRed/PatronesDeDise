@@ -26,7 +26,7 @@ public class CanalTelefonia implements ICanal{
     @Override
     public void notifyObservers(Notificaciones notificaciones) {
         for (IUser user:users ) {
-            if (user.getPreferenciaNotificaciones().equals(notificaciones.getCatalizador())){
+            if (user.getPreferenciaNotificaciones().equals(notificaciones.getElementos())){
                 user.update("nuevas notificaciones!!!!",notificaciones);
             } else if(user.getPreferenciaNotificaciones().equals("Premios y Promos")) {
                 user.update2("nuevas notificaciones!!!!",notificaciones);

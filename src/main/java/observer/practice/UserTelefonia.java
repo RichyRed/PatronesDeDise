@@ -1,11 +1,11 @@
 package observer.practice;
 
 public class UserTelefonia implements IUser{
-    String catalizador;
+    String elementos;
     Persona persona;
 
     public UserTelefonia(String notificacion, Persona persona) {
-        this.catalizador = notificacion;
+        this.elementos = notificacion;
         this.persona = persona;
     }
 
@@ -13,7 +13,7 @@ public class UserTelefonia implements IUser{
     public void update(String msg, Notificaciones newNotificaciones) {
         System.out.println("***** Notificaciones: "+msg+" *****");
         System.out.println("Persona: "+persona.getName());
-        System.out.println("Preferencia: "+ catalizador);
+        System.out.println("Preferencia: "+ elementos);
         newNotificaciones.showInfo();
     }
 
@@ -21,7 +21,7 @@ public class UserTelefonia implements IUser{
     public void update2(String msg, Notificaciones newNotificaciones) {
         System.out.println("***** Notificaciones: "+msg+" *****");
         System.out.println("Persona: "+persona.getName());
-        System.out.println("Preferencia: "+ catalizador);
+        System.out.println("Preferencia: "+ elementos);
         newNotificaciones.showInfo2();
     }
 
@@ -29,13 +29,13 @@ public class UserTelefonia implements IUser{
     public void update3(String msg, Notificaciones newNotificaciones) {
         System.out.println("***** Notificaciones: "+msg+" *****");
         System.out.println("Persona: "+persona.getName());
-        System.out.println("Preferencia: "+ catalizador);
+        System.out.println("Preferencia: "+ elementos);
         newNotificaciones.showInfo3();
     }
 
     @Override
     public String getPreferenciaNotificaciones() {
-        return catalizador;
+        return elementos;
     }
 
     public Persona getPersona() {
