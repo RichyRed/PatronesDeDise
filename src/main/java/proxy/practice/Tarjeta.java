@@ -1,11 +1,11 @@
 package proxy.practice;
 
 public class Tarjeta implements ICuenta {
-    private CuentaBancaria cuentaBancaria;
+    private Cuentabancaria cuentaBancaria;
 
     public Tarjeta() {
         System.out.println("Creando cuenta, saldo inicial de 1000 BS ");
-        cuentaBancaria = new CuentaBancaria(1000);
+        cuentaBancaria = new Cuentabancaria(1000);
     }
 
     @Override

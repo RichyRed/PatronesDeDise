@@ -1,9 +1,9 @@
 package proxy.practice;
 
-public class CuentaBancaria implements ICuenta {
+public class Cuentabancaria implements ICuenta {
     int saldo;
 
-    public CuentaBancaria(int saldo){
+    public Cuentabancaria(int saldo){
         this.saldo = saldo;
     }
 
